@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Contact Us page</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Flowers Website">
+		<meta name="keywords" content="Flowers, Order, feedback">
+		<meta name="author" content="Rajwinder And Mandeep">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="images/favicon.jpg" sizes="16x16">
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<body>
+		<!--  ==== Header Section ==== -->
+		<header class="header">
+			<a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+			<div class="header-right">
+				<a target="_blank" href="index.html">Home</a>
+				<a target="_blank" href="gallery.html">Gallery</a>
+				<a target="_blank" href="products.html">Shop</a>
+				<a target="_blank" href="aboutus.html">About Us</a>
+				<a target="_blank" href="contactus.html">Contact Us</a>
+				<form class="searchbar">
+					<input type="text" name="search" placeholder="Search..">
+					<input type="image" id="Search" src="https://www.ftdimg.com/pics/products/SearchIcon-new.jpg" title="Search" alt="Search">
+				</form>				
+			</div>
+		</header>
+		<!--  ==== Main Section ==== -->
+		<main>
+			<div class="container-contact">
+				<div class="wrap-contact">
+					<!--  ==== Form Start ==== -->
+					<form class="contact-form" method="POST" action="thankyou.html">
+						<span class="contact-form-title">
+							ONLINE ORDER FORM
+						</span>
+						<div class="wrap-input bg1 rs1-wrap-input">
+							<span class="label-input">USER NAME *</span>
+							<input class="input" type="text" name="username" placeholder="Enter Your User Name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required autofocus>
+							<span class="red-text">For eg: rajwinder(-,_,.)18</span>
+						</div>
+						<div class="wrap-input bg1 rs1-wrap-input">
+							<span class="label-input">FULL NAME *</span>
+							<input class="input" type="text" name="fullname" placeholder="Enter Your Full Name" pattern="[a-zA-Z]+" required>
+							<span class="red-text">For eg: Rajwinder</span>
+						</div>
+						<div class="wrap-input bg1 rs1-wrap-input">
+							<span class="label-input">Email *</span>
+							<input class="input" type="text" name="email" placeholder="Enter Your Enail Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+							<span class="red-text">For eg: example6@gmail.com</span>
+						</div>
+						<div class="wrap-input bg1 rs1-wrap-input">
+							<span class="label-input">Phone*</span>
+							<input class="input" type="text" name="phone" placeholder="Enter Number Phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+							<span class="red-text">xxx-xxx-xxxx</span>
+						</div>
+						<div class="wrap-input bg1 rs1-wrap-input">
+							<span class="label-input">Number of items*</span>
+							<input class="input" type="number" name="qty" placeholder="Enter Quantity" required>
+						</div>
+						<div class="wrap-input bg1 rs1-wrap-input">
+							<span class="label-input">Delivery Locations*</span>
+							<input list="locations" class="input" name="location" placeholder="Enter the Delivery location">
+							<datalist id="locations">
+								<option value="Canada">
+								<option value="USA">
+								<option value="New Zealand">
+								<option value="England">
+								<option value="DUbai">
+							</datalist>
+						</div>
+						<div class="wrap-input input-select bg1">
+							<span class="label-input">Colour & style of flowers *</span>
+							<div>
+								<select class="js-select2" name="service">
+									<option>Bright & Colourful</option>
+									<option>White & Green</option>
+									<option>Pink & White</option>
+									<option>Refined & Elegant</option>
+								</select>
+							</div>
+						</div>
+						<div class="w-full">
+							<div class="wrap-contact-form-radio">
+								<span class="label-input">Flowers Types*</span>
+								<div class="contact-form-radio m-t-15">
+									<input type="checkbox" name="flowerType" value="daisies" checked="checked">
+									<label> Daisies	</label>
+								</div>
+								<div class="contact-form-radio">
+									<input type="checkbox" name="flowerType" value="lilies">
+									<label> Lilies </label>
+								</div>
+								<div class="contact-form-radio">
+									<input type="checkbox" name="flowerType" value="mixed">
+									<label> Mixed Bouquets </label>
+								</div>
+								<div class="contact-form-radio">
+									<input type="checkbox" name="flowerType" value="sunflowers">
+									<label> Sunflowers </label>
+								</div>
+							</div>
+						</div>
+						<div class="w-full">
+							<div class="wrap-contact-form-radio">
+								<span class="label-input">Occasion</span>
+								<div class="contact-form-radio m-t-15">
+									<input type="radio" name="occasion" value="Birthday" checked="checked">
+									<label> Birthday </label>
+								</div>
+								<div class="contact-form-radio">
+									<input type="radio" name="occasion" value="Mothers">
+									<label>	Mothers day	</label>
+								</div>
+								<div class="contact-form-radio">
+									<input type="radio" name="occasion" value="Anniversary">
+									<label>	Anniversary	</label>
+								</div>
+								<div class="contact-form-radio">
+									<input type="radio" name="type-product" value="service">
+									<label> Congratulations </label>
+								</div>
+							</div>
+						</div>					
+						<div class="wrap-input wrap-textarea validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
+							<span class="label-input">Message</span>
+							<textarea class="input" name="message" placeholder="Your message here..."></textarea>
+						</div>
+						<div class="container-contact-form-btn">
+							<button class="contact-form-btn">
+								<span> Submit </span>
+							</button>
+						</div>
+					</form>
+				<!--  ==== Form End ==== -->
+				</div>
+			</div>
+			<!--  ==== Google Map ==== -->
+			<iframe class="contact-map" src="https://maps.google.com/maps?q=45.5440916,-73.6424363&h1=es;z=14&amp;output=embed"></iframe>
+		</main>
+		<!--  ==== Footer Section ==== -->
+		<footer>
+			<div class="footer-nav">
+				<div class="footer-box">
+					<h4>Our Company</h4>
+					<ul>
+						<li><a target="_blank" href="index.html">Home</a></li>
+						<li><a target="_blank" href="aboutus.html">About Us</a></li>
+						<li><a target="_blank" href="products.html">Shop</a></li>
+						<li><a target="_blank" href="gallery.html">Gallery</a></li>
+						<li><a target="_blank" href="contactus.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer-box">
+					<h4>Flower Guides</h4>
+					<ul>
+						<li><a href="javascript:void(0);">Blog</a></li>
+						<li><a href="javascript:void(0);">Gift Giving Guides</a></li>
+						<li><a href="javascript:void(0);">Wedding Flower Guide</a></li>
+						<li><a href="javascript:void(0);">International Delivery</a></li>
+						<li><a href="javascript:void(0);">Floral Facts & Inspiration</a></li>
+					</ul>
+				</div>
+				<div class="footer-box">
+					<h4>Help</h4>
+					<ul>
+						<li><a href="mailto:webmaster@example.com">Customer Service</a></li>
+						<li><a href="mailto:webmaster@example.com">Flower Guides</a></li>
+						<li><a href="mailto:webmaster@example.com">Plant Guides</a></li>
+						<li><a target="_blank" href="privacy-policy.html">Privacy Policy</a></li>
+						<li><a target="_blank" href="terms-conditions.html">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<div class="footer-box">
+					<h4>Contact</h4>
+					<ul>
+						<li><a href="mailto:webmaster@example.com">flowers@gmail.com</a></li>
+						<li><a href="tel:1800.580.2913">1800.580.2913</a></li>
+
+					</ul>
+					<h4 class="follow-us">Follow us on</h4>
+					<ul class="social-icons">
+						<li><a target="_blank" href="https://www.facebook.com/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+						<li><a target="_blank" href="https://twitter.com/?lang=en" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+						<li><a target="_blank" href="https://www.youtube.com/" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/feed/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+						<li><a target="_blank" href="https://github.com/" class="social-icon"> <i class="fa fa-github"></i></a></li>
+					</ul>					
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
